@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GPA Predictor</title>
+<meta name="description" content="Predict your course grades and GPA on the 4.3 scale.">
+<meta name="theme-color" content="#0a0a14">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="glow g1"></div><div class="glow g2"></div>
+<main class="wrap">
+  <header class="top">
+    <h1>GPA <span>Predictor</span></h1>
+    <p>4.3 scale &middot; everything stays on your device</p>
+  </header>
+  <div id="app"></div>
+  <p class="foot">Grade cutoffs are editable because each subject sets its own. Check your syllabus.</p>
+</main>
+<input type="file" id="file" accept="application/json,.json" hidden>
+<div id="toast" class="toast" role="status"></div>
+<script src="logic.js"></script>
+<script src="view.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
